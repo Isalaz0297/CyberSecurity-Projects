@@ -1,2 +1,2 @@
-# CyberSecurity-Projects
-Diagrams, Linux scripts, and Ansible scripts from CyberClass
+# scripts
+Linux Scripts and Ansible Scripts from my CyberBootCamp
