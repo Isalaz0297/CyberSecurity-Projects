@@ -2,8 +2,8 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![CyberSecurity-Project/diagrams/Rednetwork.png]
-![CyberSecurity-Project/diagrams/Elk-network.png]
+![/diagrams/Rednetwork.png](https://github.com/Isalaz0297/CyberSecurity-Projects/blob/main/diagrams/Elk-network.png)https://github.com/Isalaz0297/CyberSecurity-Projects/blob/main/diagrams/Rednetwork.png
+![/diagrams/Elk-network.png](https://github.com/Isalaz0297/CyberSecurity-Projects/blob/main/diagrams/Elk-network.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the *elk.yml* file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -68,7 +68,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![CyberSecurity-Projects/Images/docker_ps_output.png]
+![CyberSecurity-Projects/Images/docker_ps.png](https://github.com/Isalaz0297/CyberSecurity-Projects/blob/main/images/Docker_ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
