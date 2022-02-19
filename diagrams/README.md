@@ -78,7 +78,7 @@ We have installed the following Beats on these machines:
 - _Filebeat, and Metricbeat_
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- _File be collects logs, whereas Metricbeat collects statistics about the operating system like what programs have been processed. The logs gather information of users data._
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -92,4 +92,20 @@ SSH into the control node and follow the steps below:
 - _Anisble hosts file by allowing ansible to access VMs through their specific IP addresses._
 - _http://10.1.0.4:5601/app/kibana_
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+Anisble-Playbook
+connect to docker container with the following commands:
+- _update system `sudo apt update`_
+- _install docker `sudo apt install docker`_
+- _pull a docker container `sudo docker pull cyberxsecurity/ansible`_
+- _start docker container `sudo docker run -ti cyberxsecurity/ansible:latest bash`_
+- _edit ansible host  file to allow the system to understand who is allowed access `nano /etc/ansible/hosts`_
+- _uncomment `[webservers]` and add internal IP address under `[webservers]` with a line that reads `ansible_python_interpreter=/usr/bin/python3` besides each IP_
+- _next edit configuration file using `nano /etc/ansible/ansible.cfg` and uncomment the `remote user` line and change `root` to the `user` of your machines_
+- _create yaml file to connect the web VM with docker [https://github.com/Isalaz0297/CyberSecurity-Projects/blob/main/ansible/pentest.yml]_
+- _start the playbook file using `ansible-playbook pentest.yml`_
+- _create elk yaml file to connect sync with the web VM [https://github.com/Isalaz0297/CyberSecurity-Projects/blob/main/ansible/elk.yml+]_
+- _start the elk playbook using `ansible-playbook elk.yml`_
+- _finally, ssh into elk server to make sure anible has set up the elk server connection_
+
+
+
